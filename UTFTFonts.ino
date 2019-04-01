@@ -2,7 +2,7 @@
 // Declare which fonts we will be using
 extern uint8_t SmallFont[];
 extern uint8_t BigFont[];
-extern uint8_t SevenSegNumFont[];</utft.h></p><p>// Set the pins to the correct ones for your development shield
+extern uint8_t SevenSegNumFont[]; // Set the pins to the correct ones for your development shield
 // ------------------------------------------------------------
 // Arduino Uno / 2009:
 // -------------------
@@ -32,4 +32,4 @@ UTFT myGLCD(ITDB32S,38,39,40,41);</display></display></display></display></p><p>
   myGLCD.print("@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_", CENTER, 132);
   myGLCD.print("`abcdefghijklmnopqrstuvwxyz{|}~ ", CENTER, 144);</p><p>  myGLCD.setFont(SevenSegNumFont);
   myGLCD.print("0123456789", CENTER, 190);</p><p>  while(1) {};
-}</p>
+}
